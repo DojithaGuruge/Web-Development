@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Link CSS files-->
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/contactus.css">
+	<link rel="stylesheet" href="css/footer.css">
+	
+</head>
+<body style="background-color: #e9dddd;">
+	<!--NAVIGATION BAR--> 
+	<div>
+		<nav>
+			<a href="../Home/home.html">
+			  <img id="logo" src="HF-Images/Logo.jpeg" alt="logo" width="300" height="90"/>
+			</a>
+	  
+			<ul class="nav-ul">
+				<li><a href="../Home Page/home.html">Home</a></li>
+				<li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/Student 4/Gallery/Gallery.html">Gallery</a></li>
+				<li><a href="../Packages/Buy_Product.html">Booking</a></li>
+				<li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/Student 3/Quiz.html">Quiz</a></li>
+				<li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/Contact Us/contactus.html">Contact Us</a></li>
+				<li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/Student 3/Details.html">About Us</a></li>
+			  </ul>
+		</nav>
+	</div>
+
+	<br/><br/><br/><br/><br/><br/>
+    <div id = "contentOfQuery" style="margin-left: 20%;">
+		
+        <h1 id="formHeading"> Contact Us </h1>
+			
+			<form id="form" action="mailto:chamindu.20210445@iit.ac.lk" method="POST" enctype="text/plain">
+				
+				<div id="main" >
+				    <!--Shows the form with fields and view query button -->
+					<div class="query">
+						<label for="firstName">First Name :</label>
+						<input class="input" name="firstName" id="firstName" type="text" placeholder="Enter your First name"><br>
+					</div>
+					<div class="query">
+						<label for="lastName">Last Name :</label>
+						<input class="input" name="lastName" id="lastName" type="text" placeholder="Enter your Last name"><br>
+					</div>
+					<div class="query">
+						<label for="country">Country :</label>
+						<input class="input" name="country" id="country" type="text" placeholder="Enter Your Country"><br>
+					</div>
+					<div class="query">
+						<label for="email">Email :</label>
+						<input class="input" name="email" id="email" type="email" placeholder="user1234@gmail.com"><br>
+					</div>
+					<div class="query">
+						<label for="phone">Contact Number :</label>
+						<input class="input" name="phone" id="phone" type="tel" placeholder="Enter contact number here"><br>
+					</div>
+					 
+					<div class="query">
+						<label for=Subject>Choose Subject From Here:</label>   
+                        <select name="subject of the query" id="Subject">
+                            <option disabled >SELECT OPTION</option>
+                        	<option value="Contact our Agent">Contact our Agent</option>
+                            <option value="Obtaining a Guide">Obtaining a Guide</option>
+                            <option value="Special Booking">Special Booking</option>
+                            <option value="other">Other</option>
+                        </select>
+							
+					</div>
+					<div class="query">
+						<label for="details" >Query Detials :</label>
+						<textarea class="input" name="details" id="details"  rows="10" placeholder="About Query"></textarea>
+					</div>
+					<div class="viewButton">
+						<input name="viewQuery" id="viewQuery" type="button" value="View Query" onclick="validation(this.form)">
+					</div>
+				</div>
+	
+        		<div id="viewSummary">
+					<!-- Write summary of the query -->
+				</div>
+            </form>
+	</div>
+			<br/><br/>
+
+			<footer>
+				<div class="footer">
+				  <div class="row">
+					<div class="item">
+					  <h3>About Us</h3>
+					  <ul>
+						<li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/ContactUs/contactus.html">Contact Us</a></li>
+						<li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/AdditionalContent/additional-content.html">Additional Content</a></li>
+						<li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/Student 4/sitemap/Sitemap.html">SITE MAP</a></li>
+					  </ul>
+					</div>
+				  
+					<div class="text">
+					  <form action="mailto:tthambapanni@gmail.com">
+						<label for="newsfeed">News Feed</label><br />
+						<input
+						  type="email"
+						  name="newsfeed"
+						  id="newsfeed"
+						  class="newsfeed"
+						  placeholder="Email Adress"
+						/>
+						<input type="submit" value="Subscribe" />
+					  </form>
+					</div>
+				  </div>
+		  
+				  <div class="social">
+					<h3>Follow Us</h3>
+					<a href="" >
+					  <img src="HF-Images/Instagram.png" alt="Instagram"/>
+					</a>
+					<a href="https://www.facebook.com/Thambapannicom-109229721731694/" target="_blank">
+					  <img src="HF-Images/Facebook.png" alt="FaceBook"/>
+					</a>
+					<a href="https://t.co/dh7kvN8Kd" target="_blank">
+					  <img
+						src="HF-Images/Twitter.png"
+						alt="Twitter"/>
+					</a>
+					<a href="#" target="_blank">
+					  <img
+						src="HF-Images/LinkedIn.png"
+						alt="LinkedIn"/>
+					</a>
+				  </div>
+		  
+				  <p class="copyright">Thambapanni &copy; 2022</p>
+				  <p class="copyright">
+					Page Editor:
+					<a href="../Developer Page/Developer Page.html" target="_blank">Chamindu Wanigasekara</a>
+				  </p>
+				</div>
+			</footer> 
+
+			<script>
+				let unfilled = []; 
+				
+				function getSubjectValue(){
+				// <!--Returns the value of the selected subject -->
+					let quesubject = document.getElementById("Subject").value;
+					return quesubject;
+				}
+				
+				function alertHandler(subject){
+				// Checks for empty fields and shows the alert 
+					let i;
+					for(i=0; i<subject.length; i++){
+						if(subject[i] == "subject of the query"){
+							alert("Please select your "+subject[i]+" from list provided")
+						}else{
+							alert("Please enter your "+subject[i]+" to the relavent field")
+						}
+					}
+					
+				}
+			function validation(formIn){
+				// If any fields are empty, a relevant field will be added to an array; if no fields are empty, a summary of the data will be written to the div tag —>
+				let popUpSelected = getSubjectValue(formIn.SubjectOfTheQuery);
+				unfilled=[];
+				if(formIn.firstName.value == ""){
+					unfilled.push("first name");
+				}
+				if(formIn.lastName.value == ""){
+					unfilled.push("last name");
+				}
+				if(formIn.country.value == ""){
+					unfilled.push("country");
+				}
+				if(formIn.email.value == ""){
+					unfilled.push("email");
+				}
+				if(formIn.phone.value == ""){
+					unfilled.push("contact number");
+				}
+				if (popUpSelected == ""){
+					unfilled.push("subject of the query");
+				}
+				if(formIn.details.value == ""){
+					unfilled.push("about query");
+				}
+				
+				
+				alertHandler(unfilled);
+				if(unfilled.length ==0){
+					document.getElementById("main").style.display = 'none';
+					document.getElementById("viewSummary").style.display = 'block';
+					// Writes summary details to the div -->
+					document.getElementById("viewSummary").innerHTML =
+					'<dl class="SummaryOfQuery"><dt class="fields">Name : </dt>'+
+					'<dd class="valuesOfFields">'+formIn.firstName.value+' '+formIn.lastName.value+'</dd>'+
+					'<dt class="fields">Country : </dt>'+
+					'<dd class="valuesOfFields">'+formIn.country.value+'</dd>'+
+					'<dt class="fields">Email : </dt>'+
+					'<dd class="valuesOfFields">'+formIn.email.value+'</dd>'+
+					'<dt class="fields">Contact Number : </dt>'+
+					'<dd class="valuesOfFields">'+formIn.phone.value+'</dd>'+
+					'<dt class="fields">Subject of Query : </dt>'+
+					'<dd class="valuesOfFields">'+popUpSelected+'</dd>'+
+					'<dt class="fields">Details : </dt>'+
+					'<dd class="valuesOfFields">'+formIn.details.value+'</dd></dl><br><br>'+
+					'<div class="viewButton"><input class="sendAndEdit" name="edit" id="edit" type="button" value="Edit" onclick="previousPage()">'+
+					'<button class="sendAndEdit" type="button" value="submitted" onclick="SubmitAndReset(this.form)">Send</button></div>'
+				}
+			}
+			function previousPage(){
+				document.getElementById("viewSummary").style.display = 'none';
+				document.getElementById("main").style.display = 'block';
+			}
+			function SubmitAndReset(formIn){
+				alert("If you are confident that all the details are correct you can send us an email and we will sent you a reply shotly. ")
+				document.getElementById("viewSummary").style.display = 'none';
+				document.getElementById("main").style.display = 'block';
+				document.getElementById("form").submit();
+				document.getElementById("form").reset();
+			}
+			</script>
+</body>
+</html>

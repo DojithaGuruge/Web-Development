@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Buy Products</title>
+		<link rel="stylesheet" type="text/css" href="Buy_Product.css">
+		<link rel="stylesheet" href="header.css">
+		<link rel="stylesheet" href="footer.css">
+	</head>
+	<body class="body-bg" >
+	
+		<!-- Navigation Bar -->
+		<nav>
+			<a href="../Home/home.html">
+			  <img id="logo" src="Logo.jpeg" alt="logo" width="300" height="90"/>
+			</a>
+	  
+			<ul class="nav-ul">
+				<li><a href="../Home Page/home.html">Home</a></li>
+				<li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/Student 4/Gallery/Gallery.html">Gallery</a></li>
+				<li><a href="../Packages/Buy_Product.html">Booking</a></li>
+				<li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/Student 3/Quiz.html">Quiz</a></li>
+				<li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/Contact Us/contactus.html">Contact Us</a></li>
+				<li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/Student 3/Details.html">About Us</a></li>
+			  </ul>
+		  </nav>
+
+		<!-- Declaring section -->
+		<div>
+			<!-- Declaring a sub section -->
+			<div class="section1">
+				<!-- Sri Lanka-->
+				<div class="card">
+					<!-- Add image , give the width -->
+					<img src="Srilanka.JPG" style="width:100%" alt="Sri Lanka">
+					<div class="h1country">Sri Lanka</div>
+					<p class="price">$15 000</p>
+					<p class="tdetail"><span><b>Adults :</b></span>  2 </p>
+					<p class="tdetail"><span><b>Kids  :</b></span>	  2 </p>
+					<p class="tdetail"><span><b>Room Type :</b></span>  Luxury Room</p>
+					<!-- Add onclick events yo the button -->
+					<p><button onclick="openForm_1()" class="open-button" id="sri_lanka" >Add to Cart</button></p>
+					<!-- Pop up user to how many days you want to travel -->
+					<div id="SL_form" class="modal">
+						<div class="modal-content">
+							<form class="form-container">
+								<div class="h1country">Number of Days </div>
+								<!-- Add textfield -->
+								<input type="text" placeholder="Number of Days" id="sl_tour_days" required>
+								<!-- Add onclick events for the buttons -->
+								<button type="submit" class="btnTour" id="Sri-Lanka_Tour_Days-" onclick="Srilanka()">ENTER</button>
+								<button type="button" class="btnTour cancel" onclick="closeForm_1()">CLOSE</button>
+							</form>	
+						</div>
+					</div>
+				</div>
+
+				<!-- Japan -->
+				<div class="card">
+					<img src="Japan.jpg" style="width:100%" alt="Japan">
+					<div class="h1country">Japan</div>
+					<p class="price">$20 000</p>
+					<p class="tdetail"><span><b>Adults :</b></span>  2 </p>
+					<p class="tdetail"><span><b>Kids  :</b></span>	  2 </p>
+					<p class="tdetail"><span><b>Room Type :</b></span>  Luxury Room</p>
+					<p><button onclick="openForm_2()" class="open-button" id="japan">Add to Cart</button></p>
+					<div id="japan_form" class="modal">
+						<div class="modal-content">
+							<form class="form-container">
+								<div class="h1country">Number of Days </div>
+								<input type="text" placeholder="Number of days" id="japan_tour_days" required>
+								<button type="submit" class="btnTour" id="Japan_Tour_Days-" onclick="Japan()">ENTER</button>
+								<button type="button" class="btnTour cancel" onclick="closeForm_2()">CLOSE</button>
+							</form>	
+						</div>
+					</div>
+				</div>
+
+				<!-- New Zealand -->
+				<div class="card">
+					<img src="NewZealand.JPG" style="width:100%" alt="New Zealand">
+					<div class="h1country">New Zealand</div>
+					<p class="price">$12 000</p>
+					<p class="tdetail"><span><b>Adults :</b></span>  2 </p>
+					<p class="tdetail"><span><b>Kids  :</b></span>	  2 </p>
+					<p class="tdetail"><span><b>Room Type :</b></span>  Luxury Room</p>
+					<p><button onclick="openForm_3()" class="open-button" id="newzealand">Add to Cart</button></p>
+					<div id="nz_form" class="modal">
+						<div class="modal-content">
+							<form class="form-container">
+								<div class="h1country">Number of Days </div>
+								<input type="text" placeholder="Number of days" id="nz_tour_days"  required>
+								<button type="submit" class="btnTour" id="New-Zealand_Tour_Days-" onclick="NewZealand()">ENTER</button>
+								<button type="button" class="btnTour cancel" onclick="closeForm_3()">CLOSE</button>
+							</form>	
+						</div>
+					</div>
+				</div>
+
+				<!-- Dubai -->
+				<div class="card">
+					<img src="dubai.JPEG" style="width:100%" alt="Dubai">
+					<div class="h1country">Dubai</div>
+					<p class="price">$28 000</p>
+					<p class="tdetail"><span><b>Adults :</b></span>  2 </p>
+					<p class="tdetail"><span><b>Kids  :</b></span>	  2 </p>
+					<p class="tdetail"><span><b>Room Type :</b></span>  Luxury Room</p>
+					<p><button onclick="openForm_4()" class="open-button" id="dubai">Add to Cart</button></p> 
+					<div id="dubai_form" class="modal">
+						<div class="modal-content">
+							<form class="form-container">
+								<div class="h1country">Number of Days </div>
+								<input type="text" placeholder="Number of Days" id="dubai_tour_days" required>
+								<button type="submit" class="btnTour" id="Dubai_Tour_Days-" onclick="Dubai()">ENTER</button>
+								<button type="button" class="btnTour cancel" onclick="closeForm_4()">CLOSE</button>
+							</form>	
+						</div>
+					</div>
+				</div>
+
+				<!-- France-->
+				<div class="card">
+					<img src="france.JPG" style="width:100%" alt="France">
+					<div class="h1country">France</div>
+					<p class="price">$30 000</p>
+					<p class="tdetail"><span><b>Adults :</b></span>  2 </p>
+					<p class="tdetail"><span><b>Kids  :</b></span>	  2 </p>
+					<p class="tdetail"><span><b>Room Type :</b></span>  Luxury Room</p>
+					<p><button onclick="openForm_5()" class="open-button" id="france" >Add to Cart</button></p>
+					<div id="france_form" class="modal">
+						<div class="modal-content">
+							<form class="form-container">
+								<div class="h1country">Number of Days </div>
+								<input type="text" placeholder="Number of Days" id="france_tour_days" required>
+								<button type="submit" class="btnTour" id="France_Tour_Days-" onclick="France()">ENTER</button>
+								<button type="button" class="btnTour cancel" onclick="closeForm_5()">CLOSE</button>
+							</form>	
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			<!-- End of the section  -->
+			<!-- Add left section -->
+			<div class="aside1" >
+				<div>
+					<!-- Image use to obtain user informaton -->
+					<img src= "bsi.JPG" class="user_profile" id="user" onclick="userProfile()" alt="signin image">
+					<!-- Label that shows the user name -->
+					<label class="user_label" id="username_label"><b>Sign In</b></label>
+					<!-- User login form-->
+					<div id="userprofile_form" class="modal">
+						<div class="modal-content">
+							<form class="user-container">
+								<div class="h1country">Personal Details</div><br><br>
+								<p><b>Enter Username :</b></p>
+								<!-- Obtain the name -->
+								<input type="text" placeholder="Enter Username" id="username" required>
+								<p><b>Email :</b></p>
+								<!-- Obtain the email -->
+								<input type="email" placeholder="Enter Email" id="email">
+								<button type="submit" class="btnTour"  onclick="addUser()">ENTER</button>
+								<button type="button" class="btnTour cancel" onclick="close_userProfile() " id="inputw1">CLOSE</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<hr style="border: 1px solid #000; ">
+				<p class="para"><b> Tour Description</b></p>
+				<div class="item_list" >
+					<form>
+					<ul id="list"></ul>
+					</form>
+				</div>
+				<hr style="border: 1px solid #000; ">
+				<p class="para"><b>Total Amount</b></p>
+				<label id="total_bill" class="tot_label">$ 0.00</label>
+				<div>
+					<button  class="confirm_btn" onclick="confirmOrder()"><span>Confirm Tour </span></button>
+					<div id="confirm_form" class="modal">
+						<div class="modal-content">
+							<form class="confirm_form-container">
+								<div class="padding_final_form">
+								<div class="h1country" style="color:#f4511e">Your Tour is Successfull</div><br>
+								<label id="final_pop_up1" class="final_pop_up"></label><br><br>
+								<label id="final_pop_up2" class="final_pop_up"></label><br><br>
+								<label id="final_pop_up3" class="final_pop_up"></label><br><br>
+								<label id="final_pop_up4" class="final_pop_up"></label><br><br>
+								<label id="final_pop_up5" class="final_pop_up"></label><br><br>
+								<label id="final_pop_up6" class="final_pop_up"></label><br><br>
+								<label id="final_pop_up7" class="final_pop_up"></label><br><br>
+								<label id="final_pop_up8" class="final_pop_up"></label>
+								<button type="button" class="close_btn" onclick="closeForm_confirm()" id="inputw2">Close</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<button  class="cancel_btn" onclick="cancelOrder()" ><span>Cancel Tour </span></button><br><br><br>
+				</div>
+			</div>
+			<script src="Buy_Product_Script.js"> </script>
+		</div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+
+		<!-- footer  -->
+		<footer>
+			<div class="footer">
+			  <div class="row">
+				<div class="item">
+				  <h3>About Us</h3>
+				  <ul>
+					<li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/ContactUs/contactus.html">Contact Us</a></li>
+					<li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/AdditionalContent/additional-content.html">Additional Content</a></li>
+					<li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/Student 4/sitemap/Sitemap.html">SITE MAP</a></li>
+				  </ul>
+				</div>
+			  
+				<div class="text">
+				  <form action="mailto:jaanidurathnayaka@gmail.com">
+					<label for="newsfeed">News Feed</label><br />
+					<input
+					  type="email"
+					  name="newsfeed"
+					  id="newsfeed"
+					  class="newsfeed"
+					  placeholder="Email Adress"
+					/>
+					<input type="submit" value="Subscribe" />
+				  </form>
+				</div>
+			  </div>
+	  
+			  <div class="social">
+				<h3>Follow Us</h3>
+				<a href="" >
+				  <img src="HF-Images/Instagram.png" alt="Instagram"/>
+				</a>
+				<a href="https://www.facebook.com/Thambapannicom-109229721731694/" target="_blank">
+				  <img src="HF-Images/Facebook.png" alt="FaceBook"/>
+				</a>
+				<a href="https://t.co/dh7kvN8Kd" target="_blank">
+				  <img
+					src="HF-Images/Twitter.png"
+					alt="Twitter"/>
+				</a>
+				<a href="#" target="_blank">
+				  <img
+					src="HF-Images/LinkedIn.png"
+					alt="LinkedIn"/>
+				</a>
+			  </div>
+	  
+			  <p class="copyright">Thambapanni &copy; 2022</p>
+			  <p class="copyright">
+				Page Editor:
+				<a href="developer page/Developer Page.html" target="_blank">Dojitha Guruge</a>
+			  </p>
+			</div>
+		  </footer>
+	</body>
+</html>

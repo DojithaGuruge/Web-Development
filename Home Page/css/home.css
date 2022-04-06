@@ -1,0 +1,109 @@
+body{
+	background-color: rgb(233, 221, 221);
+}
+/* Slideshow container */ 
+.slideshow-container {
+  max-width: 1600px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot-container{
+	margin-left: 50%;
+	margin-top: 20px;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.experiences{
+	/* width: 100%; */
+	padding-left: 65px; 
+	position: absolute;/* window show 1 img*/              /* ? */
+	display: flex;  /*3 img in 1row*/
+    justify-content: center;                               /* ? */
+}
+
+.experiences .box{
+	position: relative; /*3img's 3description*/
+	width: 350px;
+	height: 350px;
+	margin: 15px;     /*space between images*/
+	text-align: center;
+	overflow: hidden;
+}
+
+
+.experiences img{
+	width: 350px;
+	height: 380px;
+}
+
+.experiences .box:hover .overlay{     /*box hover black trans*/
+	
+	left: -10%;
+}
+
+.aboutUs{
+	padding-top: 50px;
+	padding-bottom: 70px;
+	text-align: center;
+}
+
+.aboutUs p{
+	padding-top: 5px;
+	font-size: 19px;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+}
+
+.slideshow-container img{
+	width: 100%;
+	height: 700px;
+	
+}
+
+.experiences-box1{
+	margin-bottom: 400px;
+}
+
+.experiences-box2{
+	margin-bottom: 850px;
+}
+
+  
+.slidertext{
+position: absolute;
+padding-left: 28%;
+margin-top: -480px;
+font-size: 90px;
+font-weight: bold;
+color: #ffffff;
+-webkit-text-stroke-color: black;
+-webkit-text-stroke-width: 1px;
+}
+
+
+.slidertextsub{
+	position: absolute;
+	padding-left: 35%;
+	margin-top: -270px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+
+}
+	

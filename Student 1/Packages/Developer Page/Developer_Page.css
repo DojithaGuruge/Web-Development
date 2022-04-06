@@ -1,0 +1,64 @@
+
+
+.dive_body
+{
+	background-color: #e9dddd;
+
+}
+
+
+.dive_dis
+{
+	position:absolute; 
+	top:230px;
+	margin-left: 10px;
+	height: 120px;
+	width: 660px;
+	left:250px;
+	bottom:60px;
+	padding:130px; 
+	padding-left:125px;
+    background-color: whitesmoke;
+	border-radius: 20px;
+}
+
+.dive_image
+{
+	position:absolute;
+	padding-left: 40px;
+	padding-top: 20px;
+	right:0px;
+	left:0px;
+	top:75px;
+	bottom:80px;
+	width:250px;
+	height:250px;
+}
+
+.dive_headline
+{
+	width:300px;
+	height:500px;
+	color:#000000;
+	font-family:'Courier New', Courier, monospace;
+	font-size:45px;
+	padding-left:600px;
+	top:260px;
+	position:absolute;
+	right:20px;
+	left:20px;
+}
+
+.dive_details
+{
+	width:600px;
+	height:500px;
+	color:black;
+	font-family:'Courier New', Courier, monospace;
+	font-size:25px;
+	position:absolute;
+	top:335px;
+	right:70px;
+	left:550px;
+	font-weight:bold;
+}

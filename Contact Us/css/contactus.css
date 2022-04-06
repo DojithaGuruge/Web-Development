@@ -1,0 +1,121 @@
+ #contentOfQuery{
+  margin-top:1px;
+  width: 62%;
+  left:15%;
+  z-index: 0;
+  background-color: whitesmoke;    
+}
+
+#formHeading{
+    color:#17344d;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:45px;
+    font-weight:bold;
+    display:grid;
+    text-align: center;    
+}
+
+#form {
+  padding: 30px 100px; 
+  position:relative;
+  align-content:center;  
+}
+
+.input{
+    width: 280px;
+    float: right;
+    text-align: center;
+    border: 1px solid;
+    border-color: #17344d;
+    background-color: white;
+    outline-style: groove;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+}
+
+.query{
+    color: #17344d;
+    margin: 30px;
+    margin-top: 12px;
+    width: 530px;
+    display:flow-root;
+    font-weight:bold;
+    font-size: 18px;        
+}
+
+#Subject{
+    width: 280px;
+    float: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+    text-align: center;
+    border: 1px solid;
+    border-color: #17344d;
+    background-color: #ffffff;
+    outline-style: groove;
+}
+
+#viewQuery{
+  font-weight:bold;
+  background-color: #17344d;
+  color: #ffffff;
+	margin-top:20px;
+  margin-left: 15px;
+	padding:5px 20px 5px 20px;
+	border:2px solid;
+	border-color: #ffffff;
+	border-radius:10px;
+	outline-style:groove;    
+}
+
+#viewQuery:hover,.editandsendbuttons:hover{
+	background-color: #e9dddd;
+  color: #000000;
+}
+
+#viewQuery:active,.editandsendbuttons:active{
+	background-color: #ffffff;
+	color:#000000;
+	border-color:#3b3a37;
+}
+
+.viewButton{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.SummaryOfQuery{
+	padding:20px;
+	width:62%;
+  height: 200px;
+  position:absolute;
+  margin-top: 25px;
+  margin-left: 4%;
+  background: #17344d;
+	display:grid;
+	grid-template-columns: max-content auto;
+	border-radius:8px;
+  color: whitesmoke;  
+}
+
+.fields{
+  text-align: right;
+}
+
+.sendAndEdit{
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-top: 270px;
+  padding:5px 20px 5px 20px;
+  font-weight:bold;
+  background-color: #17344d;
+  color: whitesmoke ;
+  border:2px solid;
+  border-color: black;
+	border-radius:3px;
+	outline-style:groove;
+}
+
+

@@ -1,0 +1,386 @@
+
+
+/* Buy products web page begin here */
+/* Css for items */
+
+.card {
+  max-width: 470px;
+  max-height : 1000px;
+  text-align: center;
+  font-family: Bahnschrift;
+  float:left;
+  margin: 30px 30px 1px 1px ;
+  background-color : #EBEBEB;
+  border-radius: 20px;
+}
+
+
+/* Css for price  */
+.price {
+  color: #c54a15;
+  font-size: 20px;
+  padding-bottom:10px;
+}
+
+/* Edit button contain in the card */
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #f4511e;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 18px;
+  position:static;
+  border-radius: 20px;
+  margin-bottom: 2%;
+}
+
+/* Add hover effects for the button */
+.card button:hover {
+  opacity: 0.8;
+}
+
+.h1country{
+	font-size:20px;
+  font-weight: bold;
+	color: black;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+.body-bg{
+	background-image:url("bbg.jpg");
+}
+
+.tdetail {
+	padding-bottom:10px;
+	font-size:17px;
+}
+
+/* Divide page in to two , declaring the width ND POSITION */
+.section1 { 
+	float: right ;
+	width:75% ;
+  margin-top: 8%;
+}
+
+/* Add styles to the form container */
+.form-container {
+    width: 300px;
+    height:300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* input fields */
+.form-container [type=text]{
+    width: 260px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    position:relative;
+    top:40px;
+    left: 20px;
+    border-radius: 20px;
+}
+
+/* Set a style for the submit button */
+.form-container .btnTour {
+    background-color: #19c5f0;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 260px;
+    margin-bottom:10px;
+    opacity: 0.8;
+    position:relative;
+    left:20px;
+    top:60px;
+    border-radius: 20px;
+}
+
+
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: black;
+}
+
+/* Add effects to buttons */
+.form-container .btnTour:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  top:100px;
+  background-color: white;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 26%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgb(0,0,0,0.4); /* Fallback color */
+}
+
+.modal-body {
+	padding: 2px 16px;
+}
+
+/* Lesft side of the page */
+.aside1 {
+  background-color: #e9dddd;
+	float:left;
+	width: 19%;
+	height:2736px;
+	padding:10px;
+	padding-top : 40px;
+	font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 7%;
+}
+
+/* Add css for the image use to log in */
+.user_profile{
+	border-radius:50px;
+	display: inline-block;
+	border:none;
+	position:relative;
+	left:30px;
+	bottom:10px;
+	box-shadow:  3px 3px 3px grey;  
+	outline: 0;
+	height:80px;
+	width:80px;
+}
+
+/* Edit the label shows the username */
+.user_label{
+	position:relative;
+	left:40px;
+	bottom:40px;
+	font-size:20px;
+}
+
+.user_profile:hover {
+  opacity : 0.8;
+}
+
+.hr_line{
+	position:static;
+	top:20px;
+	border: 2px solid red; 
+}
+
+.para{
+	font-size:20px;
+	padding:10px;
+	padding-left:60px ;
+}
+
+/* Edit the item list */
+.item_list{
+	font-size:15px;
+	padding:20px;
+	max-height:200px;
+	height:200px;
+	text-align:center;
+	overflow:auto;
+}
+
+.tot_label{
+	font-size:20px;
+	text-align:center;
+	padding-left:70px;
+	height:30px;	
+}
+
+/* Add css to the confirm button */
+.confirm_btn {
+  display: inline-block;
+  border-radius: 0px 20px 20px 0px;
+  background-color: black;
+  border: none;
+  color: White;
+  text-align: center;
+  font-size:15px;
+  padding:10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  vertical-align:middle;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+
+/* Add animation to the confirm button */
+.confirm_btn span:after {
+  content: '\00bb';
+  position: relative;
+  left:10px;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.confirm_btn:hover span {
+  padding-right: 25px;
+}
+
+.confirm_btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.cancel_btn {
+  display: inline-block;
+  border-radius: 0px 20px 20px 0px;
+  background-color: rgb(230, 85, 18);
+  border: none;
+  color: black;
+  font-weight:bold;
+  text-align: center;
+  font-size:15px;
+  padding:10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  vertical-align:middle;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+
+.cancel_btn span:after {
+  content: '\00bb';
+  position: relative;
+  left:10px;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.cancel_btn:hover span {
+  padding-right: 25px;
+}
+
+.cancel_btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.confirm_form-container {
+    width: 600px;
+    height:450px;
+    padding: 10px;
+    background-color: white;
+}
+
+.padding_final_form{
+	padding:20px;
+}
+
+.confirm_form-container .close_btn { 
+  background-color: red;
+  color:white;
+  position:relative;
+  left:150px;
+  top:50px;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 180px;
+  margin-bottom:10px;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+.form-container .btnShop:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* Add styles to the form container */
+.user-container {
+    width: 300px;
+    height:400px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width input fields (for username)*/
+.user-container [type=text]{
+    width: 260px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    border-radius: 20px;
+    background: #f1f1f1;
+    position:relative;
+    left:15px;
+}
+
+/* Full-width input fields (for email)*/
+.user-container [type=email]{
+    width: 260px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    border-radius: 20px;
+    background: #f1f1f1;
+    position:relative;
+    left:15px;
+}
+
+/* Set a style for the submit/login button */
+.user-container .btnTour {
+    background-color: #1d52c4;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 260px;
+    margin-bottom:15px;
+    opacity: 0.8;
+    position:relative;
+    left:50px;
+    bottom: -30px;
+    border-radius: 20px;
+}
+
+/* Add a red background color to the cancel button */
+.user-container .cancel {
+  background-color: black;
+}
+
+/* Add some hover effects to buttons */
+.user-container .btnShop:hover, .open-button:hover {
+  opacity: 1;
+}
+

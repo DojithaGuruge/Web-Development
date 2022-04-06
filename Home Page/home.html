@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <!-- Link CSS files-->
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+
+  <body>
+    <!--Navigation Bar-->
+    <nav>
+      <a href="../Home/home.html">
+        <img id="logo" src="HF-Images/Logo.jpeg" alt="logo" width="300" height="90"/>
+      </a>
+
+      <ul class="nav-ul">
+        <li><a href="../Home Page/home.html">Home</a></li>
+        <li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/Student 4/Gallery/Gallery.html">Gallery</a></li>
+        <li><a href="../Packages/Buy_Product.html">Booking</a></li>
+        <li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/Student 3/Quiz.html">Quiz</a></li>
+        <li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/Contact Us/contactus.html">Contact Us</a></li>
+        <li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/Student 3/Details.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <img src="Home-Images/Japan.jpg" alt="Slide Image 1" />
+        <h1 class="slidertext">&nbsp; Welcome to Thambapanni</h1>
+        <p class="slidertextsub">Discover amazing places at exclusive deals</p>
+      </div>
+
+      <div class="mySlides">
+        <img src="Home-Images/River.jpg" alt="Slide Image 2" />
+        <h1 class="slidertext">&nbsp;Welcome to Thambapanni</h1>
+        <p class="slidertextsub">Discover amazing places at exclusive deals</p>
+      </div>
+
+      <div class="mySlides">
+        <img src="Home-Images/Paris.jpg" alt="Slide Image 3" />
+        <h1 class="slidertext">&nbsp;Welcome to Thambapanni</h1>
+        <p class="slidertextsub">Discover amazing places at exclusive deals</p>
+      </div>
+
+    </div>
+
+    <div class="aboutUs">
+      <h1>ආයුබෝවන් | Welcome</h1>
+      <br />
+      <p>We provide you packages to have a visit to the top destinations across
+        the World. There is also an</p>
+      <p>option for you to design the tour package as per your choice. You can
+        put in the destinations that you</p>
+      <p>want to visit while planning a tour to the country you desire.</p>
+    </div>
+
+    <div class="experiences-box1">
+      <div class="experiences">
+        <div class="box">
+          <img src="Home-Images/Louver.jpg" alt="Picture 1" />
+          <div class="overlay"></div>
+        </div>
+
+        <div class="box">
+          <img src="Home-Images/England.jpg" alt="Picture 2" />
+          <div class="overlay"></div>
+        </div>
+
+        <div class="box">
+          <img src="Home-Images/Lake.jpg" alt="Picture 3" />
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="experiences-box2">
+      <div class="experiences">
+        <div class="box">
+          <img src="Home-Images/Bicycle.jpg" alt="Picture 4" />
+         
+          <div class="overlay"></div>
+         
+        </div>
+      
+
+        <div class="box">
+          <img src="Home-Images/JapanGate.jpg" alt="Picture 5" />
+          <div class="overlay"></div>
+        </div>
+
+        <div class="box">
+          <img src="Home-Images/Scenery.jpg" alt="Picture 6" />
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+          let slides = document.getElementsByClassName("mySlides");
+          //Hide the slides
+          for (let i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          
+          //Iterate the silde index
+          slideIndex++;
+          
+          //Avoid the slide index from iterating to a larger value than the array length
+          if (slideIndex > slides.length) {
+              slideIndex = 1;
+          }
+          
+          //Display the slide with the current index of the arrray
+          slides[slideIndex - 1].style.display = "block";
+          
+          // Change image every 5 seconds
+          setTimeout(showSlides, 5000);
+        }
+    </script>
+
+
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <div class="item">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/ContactUs/contactus.html">Contact Us</a></li>
+              <li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/AdditionalContent/additional-content.html">Additional Content</a></li>
+              <li><a href="file:///Users/dojitha_guruge/Desktop/w1867158/Student 4/sitemap/Sitemap.html">SITE MAP</a></li>
+            </ul>
+          </div>
+        
+          <div class="text">
+            <form action="mailto:tthambapanni@gmail.com">
+              <label for="newsfeed">News Feed</label><br />
+              <input
+                type="email"
+                name="newsfeed"
+                id="newsfeed"
+                class="newsfeed"
+                placeholder="Email Adress"
+              />
+              <input type="submit" value="Subscribe" />
+            </form>
+          </div>
+        </div>
+
+        <div class="social">
+          <h3>Follow Us</h3>
+          <a href="" >
+            <img src="HF-Images/Instagram.png" alt="Instagram"/>
+          </a>
+          <a href="https://www.facebook.com/Thambapannicom-109229721731694/" target="_blank">
+            <img src="HF-Images/Facebook.png" alt="FaceBook"/>
+          </a>
+          <a href="https://twitter.com/tthambapanni?t=zONII5VVjk4kGZz-HIdM7Q&s=09" target="_blank">
+            <img
+              src="HF-Images/Twitter.png"
+              alt="Twitter"/>
+          </a>
+          <a href="#" target="_blank">
+            <img
+              src="HF-Images/LinkedIn.png"
+              alt="LinkedIn"/>
+          </a>
+        </div>
+
+        <p class="copyright">Thambapanni &copy; 2022</p>
+         
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
